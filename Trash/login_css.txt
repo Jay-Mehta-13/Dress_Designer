@@ -1,0 +1,144 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+#login_card_container {
+    display: flex;
+    margin: 5em auto;
+    background-color: rgb(138, 138, 138);
+    height: 60vh;
+    width: 50vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#login_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100%/2);
+    font-size: 1em;
+}
+
+input {
+    height: 5%;
+    width: 50%;
+    padding: 0.1rem 0.2rem;
+    margin: 0.2rem 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    background-color: lightblue;
+}
+
+.labels{
+    margin: 0.5em;
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-flex;
+    height: 10%;
+    width: fit-content;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: inherit;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+#layer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100%/2);
+    background-color: rgb(31, 31, 31);
+}
+
+#layer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+    width: 20%;
+    border: 2px solid white;
+    padding: 0.8rem;
+}
+
+.text{
+    color: white;
+    padding: 0.3rem;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#sign_up{
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+}
+
+#sign_up:hover{
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#sign_up:active{
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.layer_left{
+    position: relative;
+    left: -50%;
+    background-color: aqua;
+} */

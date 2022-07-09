@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="page_layout.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menubar.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/fa85769fea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar_container">
+        <div id="navbar">
+            <a href="index.html">
+                <div id="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                        <desc>Created with Fabric.js 1.7.22</desc>
+                        <defs>
+                        </defs>
+                        <g transform="translate(128 128) scale(0.72 0.72)">
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
+                                <path
+                                    d="M 35.813 54.013 H 4.514 C 2.025 54.013 0 51.987 0 49.498 V 4.514 C 0 2.025 2.025 0 4.514 0 h 31.299 c 2.489 0 4.514 2.025 4.514 4.514 v 44.984 C 40.328 51.987 38.303 54.013 35.813 54.013 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,80,192); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path
+                                    d="M 35.813 90 H 4.514 C 2.025 90 0 87.975 0 85.485 V 69.741 c 0 -2.489 2.025 -4.515 4.514 -4.515 h 31.299 c 2.489 0 4.514 2.025 4.514 4.515 v 15.744 C 40.328 87.975 38.303 90 35.813 90 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,109,255); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path
+                                    d="M 85.485 90 H 54.187 c -2.489 0 -4.515 -2.025 -4.515 -4.515 V 40.501 c 0 -2.489 2.025 -4.514 4.515 -4.514 h 31.299 c 2.489 0 4.515 2.025 4.515 4.514 v 44.984 C 90 87.975 87.975 90 85.485 90 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,80,192); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path
+                                    d="M 85.485 24.773 H 54.187 c -2.489 0 -4.515 -2.025 -4.515 -4.515 V 4.514 C 49.672 2.025 51.697 0 54.187 0 h 31.299 C 87.975 0 90 2.025 90 4.514 v 15.745 C 90 22.748 87.975 24.773 85.485 24.773 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,109,255); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <div id="login_container">
+                <a id="login" href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input id = "signup_id" type="text" placeholder="Email" required="true" />
+                <input id = "signup_password" type="text" placeholder="Password" autocomplete="off" required="true"/>
+                <input id = "signup_confirm_password" type="text" placeholder="Confirm Password" autocomplete="off" required="true"/>
+                <div id="signup_error" class="error"></div>
+                <button type="submit" onclick="signup()">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div id="login_error" class="error"></div>
+                <input id="login_id" type="text" placeholder="Email"  required="true"/>
+                <input id="login_password" type="text" placeholder="Password" autocomplete="off" required="true"/>
+                <a href="#">Forgot your password?</a>
+                <button onclick="signin()">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Click down to get registered.</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        let user = null;
+        let signin = async () => {
+            let id = document.getElementById("login_id").value;
+            let password = document.getElementById("login_password").value;
+
+            let rep = await fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({id, password}),
+            })
+
+            let a = await rep.json();
+            console.log(a.message)
+            if(a.code=="success"){
+                user = a.message;
+                sessionStorage.setItem("user", user);
+                window.location.href = "index.html"
+            }
+            else{
+                document.querySelector("#login_error").innerHTML = a.message;
+            }
+        }
+        
+        let signup = async () => {
+            let id = document.getElementById("signup_id").value;
+            let password = document.getElementById("signup_password").value;
+            let confirm_password = document.getElementById("signup_confirm_password").value;
+            
+            if(password==confirm_password){
+            let rep = await fetch('http://localhost:3000/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({id, password }),
+            })
+
+            let a = await rep.json();
+            document.querySelector("#signup_error").innerText = a.message
+        }
+        else{
+            console.log("Error")
+            document.querySelector("#signup_error").innerText = "Passwords don't match!" 
+        }
+    }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Palatino, Georgia, 'Times New Roman';
+}
+
+body{
+    background-color: #d6d6d6;
+    min-height: 100vh;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+}

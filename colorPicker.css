@@ -1,0 +1,59 @@
+*{
+    /* outline: 2px solid black; */
+}
+
+#third{
+    height: 86.6vh;
+    width: 100%;
+    font-size: 1em;
+}
+
+.colorjoe_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(20, 20, 20);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height:65vh;
+    width: 70vw;
+}
+
+.config{
+    /* outline: 2px solid white; */
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    padding: 0.5em;
+}
+
+.title{
+    color:rgb(255, 255, 255);
+    font-size: 1.4em;
+    padding: 1em 0;
+}
+
+.colorName{
+    background-color: rgb(44, 44, 44);
+    border-radius: 8px;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+.color{
+    background-color: white;
+    height: 7vh;
+    width: 25vw;
+    margin: 1em 0.2em;
+}
+
+.colorPicker{
+    height: fit-content;
+    width: fit-content;
+    margin-right: 0;
+}
+
+.colorjoe_wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

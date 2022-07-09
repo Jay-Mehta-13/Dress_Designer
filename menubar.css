@@ -1,0 +1,78 @@
+  :root {
+  --primary-color: #D96AA7;
+  --secondary-color: #422C73;
+  --complimentary-color: #88BFB5;
+  --contrast-color: #d6d6d6;
+  --light-color: #D2A9D9;
+  }
+
+  .menubar_body{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      max-width:100%;
+      height: fit-content;
+  }
+  
+  nav a{
+      font-size: 1.4em;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 0;
+      text-align: center;
+  }
+  
+  nav{
+      display: inline-flex;
+      justify-content:space-evenly;
+      flex-direction: row;
+      background: var(--secondary-color);
+  }
+  
+  section {
+    /* outline: 2px solid red; */
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: all ease-in .5s;
+      justify-content: center;
+      align-items: center;
+      display: none;
+  } 
+    
+  /* Styles applied on trigger */
+  section:target {
+    display: inline-flex;
+    flex-direction: column;
+    /* Comment below */
+    /* opacity: 1; */
+    width:100%;
+    height: 100%;
+
+    /* Uncomment below */
+    transform: scale(0);
+    animation: 0.8s fadeIn forwards .5s;
+  }
+  
+  #first {
+    background:var(--primary-color);
+  }
+  #second {
+      background: var(--complimentary-color);
+  }
+  
+  #third {
+      background: var(--contrast-color);
+  }
+  
+  #fourth {
+      background: var(--light-color);
+  }
+  
+      /* Uncomment below */
+  @keyframes fadeIn {
+      100% { 
+        opacity:1;
+        transform: scale(1);
+    }
+  }
