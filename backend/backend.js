@@ -9,6 +9,8 @@ const { getStorage, ref, getDownloadURL} = require("firebase/storage");
 const storage = getStorage();
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
+const { getSheets } = require("./sheets")
+
 
 const serviceAccount = require('./serviceAccountKey.json');
 
@@ -93,8 +95,11 @@ app.post('/borders', async (req, res) => {
   res.send(borders)
 })
 
-app.post('/submit', (req, res) => {
-  console.log(req.body.user, req.body.selected);
+app.post('/submit', async (req, res) => {
+  // console.log(req.body.user, req.body.selected);
+  let promise = await getSheets({"material" : req.body.selected[0], "pattern" : req.body.selected[1], "color" : req.body.selected[2], "border" : req.body.selected[3], "user" : req.body.user})
+  let sheet = await promise
+  console.log(sheet);
   res.send({ message: true });
 })
 

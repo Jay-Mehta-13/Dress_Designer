@@ -140,17 +140,6 @@
     const cp = new ColorPicker(document.querySelector(".colorjoe_container"));
 
     var selected = [];
-    // function toggle_selection(selection, page) {
-    //   if (selected[page] && selected[page] != selection) {
-    //     selected[page].classList.remove("selected");
-    //     selection.classList.add("selected");
-    //     selected[page] = selection;
-    //   }
-    //   else {
-    //     selection.classList.toggle("selected");
-    //     selected[page] = selection;
-    //   }
-    // }
 
     function toggle_selection(id, page) {
       let current_a = document.getElementById(id).firstElementChild
@@ -159,6 +148,10 @@
         selected_a.classList.remove("selected");
         current_a.classList.add("selected");
         selected[page] = id;
+      }
+      else if (selected[page] && selected[page] == id){
+        current_a.classList.toggle("selected");
+        selected[page] = null;
       }
       else {
         current_a.classList.toggle("selected");

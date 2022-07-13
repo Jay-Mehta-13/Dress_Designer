@@ -62,7 +62,7 @@ let load_material_data = async (backend_url,calling_section, index) => {
       card_header_text.appendChild(h3)
       card_header_text.appendChild(span)
       card_overlay.appendChild(p)
-      cards.appendChild(li);
+      cards.appendChild(li)
     });
   }
 

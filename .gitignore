@@ -1,5 +1,6 @@
 backend/firebase2.js
 backend/.env
+backend/sheets_credentials.json
 backend/node_modules/.package-lock.json
 backend/node_modules/.bin/compileProtos
 backend/node_modules/.bin/compileProtos.cmd
